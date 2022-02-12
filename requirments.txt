@@ -1,6 +1,6 @@
 streamlit==1.5.0
 numpy
-opencv-python-headless
+opencv-python-headless==4.5.5
 glob
 pickle
 tempfile
