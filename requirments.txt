@@ -1,6 +1,0 @@
-numpy==1.21.2
-opencv-python==4.5.5
-glob
-pickle
-tempfile
-requests==2.25.1
