@@ -8,7 +8,6 @@ import tempfile
 global img
 def undistort_img():
     # Prepare object points 0,0,0 ... 8,5,0
-    global img
     obj_pts = np.zeros((6 * 9, 3), np.float32)
     obj_pts[:, :2] = np.mgrid[0:9, 0:6].T.reshape(-1, 2)
 
