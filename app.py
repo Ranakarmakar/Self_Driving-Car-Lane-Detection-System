@@ -39,8 +39,8 @@ def undistort_img():
     dist_pickle['mtx'] = mtx
     dist_pickle['dist'] = dist
     pickle.dump(dist_pickle, open('camera_cal/cal_pickle.p', 'wb'))
-
-
+    
+undistort_img()
 def undistort(img, cal_dir='camera_cal/cal_pickle.p'):
     # cv2.imwrite('camera_cal/test_cal.jpg', dst)
     with open(cal_dir, mode='rb') as f:
@@ -52,7 +52,7 @@ def undistort(img, cal_dir='camera_cal/cal_pickle.p'):
     return dst
 
 
-undistort_img()
+
 
 
 def pipeline(img, s_thresh=(100, 255), sx_thresh=(15, 255)):
