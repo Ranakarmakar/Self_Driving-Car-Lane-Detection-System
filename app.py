@@ -6,7 +6,7 @@ import pickle
 import tempfile
 
 
-def undistort(img, cal_dir='camera_cal/cal_pickle.p'):
+def undistort(img, cal_dir='cal_pickle.p'):
     # cv2.imwrite('camera_cal/test_cal.jpg', dst)
     with open(cal_dir, mode='rb') as f:
         file = pickle.load(f)
