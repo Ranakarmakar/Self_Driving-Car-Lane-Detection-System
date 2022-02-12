@@ -1,6 +1,7 @@
-streamlit
+streamlit==1.5.0
 numpy
-cv2
+cv2==4.5.5
 glob
 pickle
 tempfile
+requests==2.25.1
