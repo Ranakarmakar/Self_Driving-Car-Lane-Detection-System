@@ -284,7 +284,7 @@ def vid_pipeline(img):
     else:
         cv2.putText(img, 'Go Stright', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (0, 255, 0), 3)
     #cv2.putText(img, "Temp: " + str(weather("bhubaneswar")[0]) + "'F" + " Sky: " + str(weather("bhubaneswar")[1]),
-                (885, 395), cv2.FONT_HERSHEY_SIMPLEX, .8, (255, 255, 0), 1)
+                #(885, 395), cv2.FONT_HERSHEY_SIMPLEX, .8, (255, 255, 0), 1)
     cv2.putText(img, "Project By-", (20, 20), font, .4, (0, 0, 0), 1)
     cv2.putText(img, "ADIT-IBM Team-72 ", (20, 50), font, .95, (0, 0, 0), 2)
     return img
