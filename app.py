@@ -5,7 +5,7 @@ import glob
 import pickle
 import tempfile
 
-
+global img
 def undistort_img():
     # Prepare object points 0,0,0 ... 8,5,0
     global img
