@@ -238,24 +238,24 @@ def draw_lanes(img, left_fit, right_fit):
 import requests
 
 
-def weather(city):
-    api_key = "99574756b695e6a9c49004da1c5f8c9e"  # Enter the API key you got from the OpenWeatherMap website
-    base_url = "http://api.openweathermap.org/data/2.5/weather?"
+# #def weather(city):
+#     api_key = "99574756b695e6a9c49004da1c5f8c9e"  # Enter the API key you got from the OpenWeatherMap website
+#     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
-    # city_name = input("Enter city name : ")
-    complete_url = base_url + "appid=" + 'd850f7f52bf19300a9eb4b0aa6b80f0d' + "&q=" + city  # This is to complete the base_url, you can also do this manually to checkout other weather data available
-    response = requests.get(complete_url)
-    x = response.json()
+#     # city_name = input("Enter city name : ")
+#     complete_url = base_url + "appid=" + 'd850f7f52bf19300a9eb4b0aa6b80f0d' + "&q=" + city  # This is to complete the base_url, you can also do this manually to checkout other weather data available
+#     response = requests.get(complete_url)
+#     x = response.json()
 
-    if x["cod"] != "404":
-        y = x["main"]
+#     if x["cod"] != "404":
+#         y = x["main"]
 
-        current_temperature = y["temp"]
-        z = x["weather"]
+#         current_temperature = y["temp"]
+#         z = x["weather"]
 
-        weather_description = z[0]["description"]
+#         weather_description = z[0]["description"]
 
-    return current_temperature, weather_description
+#     return current_temperature, weather_description
 
 
 #weather("Bhubaneswar")[0]
@@ -277,12 +277,12 @@ def vid_pipeline(img):
 
     cv2.putText(img, 'Lane Curvature: {:.0f} m'.format(lane_curve), (900, 50), font, fontSize, fontColor, 2)
     cv2.putText(img, 'Vehicle offset: {:.4f} m'.format(curverad[2]), (900, 100), font, fontSize, fontColor, 2)
-    if curverad[2] > .25:
-        cv2.putText(img, 'Turn Left', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (255, 255, 0), 3)
-    elif curverad[2] < -.25:
-        cv2.putText(img, 'Turn Right', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (255, 255, 0), 3)
-    else:
-        cv2.putText(img, 'Go Stright', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (0, 255, 0), 3)
+    #if curverad[2] > .25:
+        #cv2.putText(img, 'Turn Left', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (255, 255, 0), 3)
+    #elif curverad[2] < -.25:
+        #cv2.putText(img, 'Turn Right', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (255, 255, 0), 3)
+    #else:
+        #cv2.putText(img, 'Go Stright', (940, 175), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (0, 255, 0), 3)
     #cv2.putText(img, "Temp: " + str(weather("bhubaneswar")[0]) + "'F" + " Sky: " + str(weather("bhubaneswar")[1]),
                 #(885, 395), cv2.FONT_HERSHEY_SIMPLEX, .8, (255, 255, 0), 1)
     cv2.putText(img, "Project By-", (20, 20), font, .4, (0, 0, 0), 1)
@@ -292,7 +292,7 @@ def vid_pipeline(img):
 
 def dashboard(img):
     shapes = np.zeros_like(img, np.uint8)
-    cv2.rectangle(shapes, (875, 10), (1270, 420), (100, 100, 100), cv2.FILLED)
+    cv2.rectangle(shapes, (875, 10), (1270, 220), (100, 100, 100), cv2.FILLED)
 
     out = img.copy()
     alpha = 0.5
