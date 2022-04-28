@@ -31,5 +31,8 @@ The in-dash systems, apart from providing entertainment features and vital infor
 # Project Scope
 This model can be updated and tuned with more efficient mathematical modelling, whereas the classical OpenCV approach is limited and no upgrade is possible as the approach is not efficient It is unable to give accurate results on the roads which do not have clear markings present on the roads. Also it cannot work for all climatic conditions This technology is increasing the number of applications such as traffic control, traffic monitoring, traffic flow, security etc. 
 
+# Conclusion 
+In this project, we proposed a new lane detection pre-processing and ROI selection methods to design a lane detection system. The main idea is to add white extraction before the conventional basic pre-processing. Edge extraction has also been added during the pre-processing stage to improve lane detection accuracy. We also placed the ROI selection after the proposed pre-processing. Compared with selecting the ROI in the original image, it reduced the nonlane parameters and improved the accuracy of lane detection. Currently, we only use the Hough transform to detect straight lane and EKF to track lane and do not develop advanced lane detection methods. In the future, we will exploit a more advanced lane detection approach to improve the performance.
+
 
 
