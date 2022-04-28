@@ -24,4 +24,8 @@ These are minimum Hardware configurations that are required.
 •    HDD: 256 GB or higher
 •    Monitor: 1024 x 768 minimum screen resolution. 
 •    Keyboard: US en Standard Keyboard.
+## User Requirements
+Since this an autonomous self-driving car, the user does not directly interact with the car. Rather, the car may have some in-dash computer system, like those found in modern day cars.
+The in-dash systems, apart from providing entertainment features and vital information like speed and engine RPM, provide navigation aids like GPS as well. They, thus, act as an interface between the user and the car. Such in-dash systems and modifications required for them to work with our system, however, are beyond the scope of this project.
+
 
