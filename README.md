@@ -28,4 +28,8 @@ These are minimum Hardware configurations that are required.
 Since this an autonomous self-driving car, the user does not directly interact with the car. Rather, the car may have some in-dash computer system, like those found in modern day cars.
 The in-dash systems, apart from providing entertainment features and vital information like speed and engine RPM, provide navigation aids like GPS as well. They, thus, act as an interface between the user and the car. Such in-dash systems and modifications required for them to work with our system, however, are beyond the scope of this project.
 
+# Project Scope
+This model can be updated and tuned with more efficient mathematical modelling, whereas the classical OpenCV approach is limited and no upgrade is possible as the approach is not efficient It is unable to give accurate results on the roads which do not have clear markings present on the roads. Also it cannot work for all climatic conditions This technology is increasing the number of applications such as traffic control, traffic monitoring, traffic flow, security etc. 
+
+
 
