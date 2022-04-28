@@ -9,7 +9,7 @@ After making we need to detect lane lines. The technique used to detect mathemat
 # Requirements
 ## Technology Stack – 
 
-Software Configuration 
+#### Software Configuration 
 These are the Software Configurations that are required.
 •    Operating System: Windows 10/8/7 (incl. 64-bit), Mac OS, Linux 
 •	Language: Python 3
@@ -17,4 +17,11 @@ These are the Software Configurations that are required.
 •    IDE: Jupyter Notebook/ Spyder 3
 •    Framework: Tkinter / Streamlit
 
+ #### Hardware Configuration 
+These are minimum Hardware configurations that are required. 
+•    Processor: Intel core 2 duo or higher. 
+•    RAM: 2 GB or higher 
+•    HDD: 256 GB or higher
+•    Monitor: 1024 x 768 minimum screen resolution. 
+•    Keyboard: US en Standard Keyboard.
 
